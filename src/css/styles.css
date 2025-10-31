@@ -273,13 +273,14 @@ a:hover {
 /* viz fixed */
 .viz {
   position: sticky;
-  top: 0;
+  top: 5px;
   height: 100vh;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 4rem;
+
 }
 
 
@@ -304,8 +305,8 @@ section {
 }
 
 .card {
-  width: 120px;
-  height: 120px;
+  width: calc(vh-70)/6;
+  height: 110px;
   background: #E9EFF14D;
   text-align: center;
   padding: 7px;
@@ -334,7 +335,7 @@ section {
 
 .card .country {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   opacity: 0.8;
   text-align: left;
 }
@@ -342,7 +343,7 @@ section {
 
 .card .mascot-img {
   width: 100%;
-  height: 52px;
+  height: 45px;
   object-fit: contain;
 
 }
@@ -390,12 +391,12 @@ section {
 }
 
 .storyh1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 20%;
 }
 
 .storyh2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
 }
 
