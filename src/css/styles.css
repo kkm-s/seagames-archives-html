@@ -448,20 +448,6 @@ section {
 
 @media screen and (max-width: 600px) {
 
-  /* ลดขนาดฟอนต์ */
-  h1 {
-    font-size: 2rem;
-    /* ลดขนาดฟอนต์ให้เล็กลง */
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
   /* ปรับ .headline ให้ยืดหยุ่นขึ้น */
   .headline {
     flex-direction: column;
@@ -507,15 +493,6 @@ section {
 
 @media screen and (max-width: 1024px) {
 
-  /* ลดขนาดฟอนต์เล็กน้อย */
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
   /* ปรับ headline ให้จัดเรียงในแนวนอน */
   .headline {
     flex-direction: row;
@@ -535,14 +512,6 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4.8rem;
-    /* ใช้ขนาดฟอนต์ที่ใหญ่สุดสำหรับจอใหญ่ */
-  }
-
-  h2 {
-    font-size: 3.2rem;
-  }
 
   .content {
     width: 70%;
