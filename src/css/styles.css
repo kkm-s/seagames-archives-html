@@ -430,10 +430,16 @@ section {
 }
 
 .highlight-dashed {
-  color: #000;
+  color: var(--blue-color);
   padding: 2px 4px;
   border-radius: 4px;
   border: 2px dashed var(--white-color);
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
 }
 
 .footer {
@@ -442,4 +448,12 @@ section {
   padding: 300px;
   text-align: center;
 
+}
+
+.footer-content {
+  max-width: 50vw;
+  margin: 0 auto;
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.6;
 }
