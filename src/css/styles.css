@@ -293,7 +293,6 @@ a:hover {
 
 section {
   min-height: 100vh;
-  /* font-size: 1.5rem; */
   padding: 3rem 0;
 }
 
@@ -310,7 +309,6 @@ section {
   background: #E9EFF14D;
   text-align: center;
   padding: 7px;
-  font-size: 0.9rem;
   color: #000000;
   transition: all 0.3s ease;
   display: flex;
