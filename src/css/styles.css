@@ -1,0 +1,565 @@
+.ibm-plex-sans-thai-looped-regular {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-looped-semibold {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-looped-bold {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --light-blue-color: #E9EFF1;
+  --blue-color: #9DD6E8;
+  --blue01-color: #0031CD;
+  --red-color: #EA482B;
+  --yellow-color: #F3EA55;
+  --green-color: #7ECC14;
+  --red02-color: #D80048;
+  --blue-green-color: #18BFC0;
+  --light-purple-color: #EB9AFC;
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+  --lh: 1.55em;
+  --a_lh: calc(1rem * 1.55);
+  --marg: calc(1.5rem / 2);
+  --logo_height: calc((100vw - (var(--marg) * 4)) * 0.1573);
+  --animation_duration: 3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-decoration: none;
+
+  position: relative;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: var(--blue01-color)
+}
+
+h1 {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--light-purple-color);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+P {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
+  text-align: left;
+  margin: 0.5rem 0;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  padding: calc(10px * 2);
+
+}
+
+.headline>div {
+  height: var(--logo_height);
+  width: 100%;
+  animation: logoScaler 3s cubic-bezier(0.66, -0.01, 0.43, 1.01) infinite alternate forwards;
+}
+
+.headline>div svg {
+  width: 100%;
+  height: 100%;
+}
+
+.headline>div svg path {
+  fill: var(--white-color);
+}
+
+.headline>div.group-1 {
+  animation-name: logoScaler_largest;
+}
+
+.headline>div.group-2 {
+  animation-name: logoScaler_larger;
+  animation-delay: calc(3s / 5*1);
+}
+
+.headline>div.group-3 {
+  animation-delay: calc(3s / 5 * 2);
+}
+
+.headline>div.group-4 {
+  animation-delay: calc(3s / 5 * 3);
+}
+
+.headline>div.group-5 {
+  animation-delay: calc(3s / 5 * 4);
+}
+
+.headline>div.group-6 {
+  animation-delay: calc(3s / 5 * 5);
+}
+
+@keyframes logoScaler {
+  0% {
+    height: calc((100vw - (0.75rem * 4)) * 0.1573);
+  }
+
+  100% {
+    height: 45%;
+  }
+}
+
+@keyframes logoScaler_larger {
+  0% {
+    height: calc((100vw - (0.75rem * 4)) * 0.1573);
+  }
+
+  100% {
+    height: 73%;
+  }
+}
+
+@keyframes logoScaler_largest {
+  0% {
+    height: calc((100vw - (0.75rem * 4)) * 0.1573);
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+.introduction {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro01 {
+  color: var(--yellow-color);
+  display: grid;
+  margin-top: 40vh;
+  justify-content: left;
+  text-align: left;
+  margin-left: 25vw;
+}
+
+.intro02 {
+  color: var(--yellow-color);
+  display: grid;
+  justify-content: left;
+  text-align: left;
+  margin-left: 25vw;
+}
+
+.link-tree {}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-left: 60vw;
+
+  font-size: 1.25rem;
+}
+
+a {
+  color: var(--light-purple-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+a:hover {
+  border-bottom: 3px solid var(--light-purple-color);
+  color: var(--light-purple-color);
+}
+
+.section01 {
+  height: 100vh;
+  position: relative;
+
+}
+
+.section02 {
+  height: 100vh;
+  text-align: center;
+
+}
+
+.heading {
+  margin-top: 15vh;
+
+}
+
+
+.content {
+  display: grid;
+  justify-content: left;
+  width: 70%;
+  /* ให้กว้างเต็ม container เพื่อ responsive */
+  max-width: 600px;
+  /* จำกัดความกว้างสูงสุด */
+  padding: 1rem;
+  /* เพิ่มระยะห่างด้านใน */
+  word-wrap: break-word;
+  /* ให้ตัดคำยาวๆ เช่น URL */
+  overflow-wrap: break-word;
+  /* สำหรับเบราว์เซอร์ใหม่ */
+  white-space: normal;
+  /* ให้ตัดบรรทัดอัตโนมัติ */
+  flex: 1;
+  min-width: 250px;
+}
+
+
+
+.scrolly-container {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  height: 100%;
+}
+
+/* viz fixed */
+.viz {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 4rem;
+}
+
+
+.story {
+  width: 25vw;
+  top: 0;
+  margin-right: 5rem;
+
+  ;
+}
+
+section {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  padding: 3rem 0;
+}
+
+/* grid */
+#mascotGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.card {
+  width: 120px;
+  height: 120px;
+  background: #E9EFF14D;
+  text-align: center;
+  padding: 7px;
+  font-size: 0.9rem;
+  color: #000000;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+.card1963 {
+  background: transparent;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #bebeda;
+}
+
+.card .year {
+  margin: 5px 0 0 5px;
+  /* บน 5px ซ้าย 5px */
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+}
+
+.card .country {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.8;
+  text-align: left;
+}
+
+
+.card .mascot-img {
+  width: 100%;
+  height: 52px;
+  object-fit: contain;
+
+}
+
+.card .none {
+  flex: 1;
+  width: 100%;
+  background: transparent;
+  /* ให้ภาพไม่บาน */
+  /* หรือใส่สีอ่อน debug ได้ เช่น #f0f0f0 */
+}
+
+/* tooltip */
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  /* ให้อยู่เหนือการ์ด */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+/* แสดงตอน hover */
+.card:hover .tooltip {
+  opacity: 1;
+}
+
+.storyh1 {
+  font-size: 2rem;
+  margin-top: 20%;
+}
+
+.storyh2 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.highlightyellow {
+  background-color: var(--yellow-color);
+  color: #000000;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.highlightred {
+  background-color: var(--red-color);
+  color: #000000;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.highlightpink {
+  background-color: var(--light-purple-color);
+  color: #000000;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.highlightgreen {
+  background-color: var(--green-color);
+  color: #000000;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.highlight-dashed {
+  color: #000;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 2px dashed var(--white-color);
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--blue01-color);
+  padding: 300px;
+  text-align: center;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  /* ลดขนาดฟอนต์ */
+  h1 {
+    font-size: 2rem;
+    /* ลดขนาดฟอนต์ให้เล็กลง */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* ปรับ .headline ให้ยืดหยุ่นขึ้น */
+  .headline {
+    flex-direction: column;
+    /* จัดองค์ประกอบในแนวตั้ง */
+    align-items: center;
+    padding: 1rem;
+    /* ลด padding */
+  }
+
+  /* ปรับ .content ให้อ่านง่ายขึ้นบนมือถือ */
+  .content {
+    width: 90%;
+    /* ให้กว้างขึ้นในมือถือ */
+    max-width: none;
+    padding: 1rem;
+  }
+
+  /* ปรับ .mascotGrid */
+  #mascotGrid {
+    grid-template-columns: repeat(3, 1fr);
+    /* เปลี่ยนเป็น 3 คอลัมน์ */
+  }
+
+  /* ปรับการจัดการของ link-tree */
+  li {
+    margin-left: 0;
+    /* ไม่ต้องการ margin ซ้าย */
+    margin-bottom: 20px;
+    /* ลดระยะห่าง */
+  }
+
+  .story {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* ปรับขนาด footer */
+  .footer {
+    padding: 50px 20px;
+    /* ลดการ padding */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* ลดขนาดฟอนต์เล็กน้อย */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  /* ปรับ headline ให้จัดเรียงในแนวนอน */
+  .headline {
+    flex-direction: row;
+    /* ใช้แนวนอน */
+  }
+
+  /* .mascotGrid เพิ่มคอลัมน์เป็น 4 คอลัมน์ */
+  #mascotGrid {
+    grid-template-columns: repeat(3, 1fr);
+    /* 4 คอลัมน์ */
+  }
+
+  .content {
+    width: 80%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4.8rem;
+    /* ใช้ขนาดฟอนต์ที่ใหญ่สุดสำหรับจอใหญ่ */
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .content {
+    width: 70%;
+    /* ใช้ความกว้างที่เหมาะสม */
+    max-width: 600px;
+    /* จำกัดความกว้าง */
+  }
+
+  /* mascot grid เป็น 6 คอลัมน์ */
+  #mascotGrid {
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 คอลัมน์ */
+  }
+
+  /* ปรับการแสดงผลของ footer */
+  .footer {
+    padding: 100px;
+    /* เพิ่มการ padding */
+  }
+}
